@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class WelcomeController {
-
     @GetMapping("/welcome")
-    @ResponseBody
+    // Remove @ResponseBody
     public String welcome() {
-        return "welcome";
+        return "welcome"; // This will look for welcome.html template
     }
 }
